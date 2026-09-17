@@ -1,12 +1,5 @@
 /* Green-Harvest Organic Farm
-   CSS based on the Week 5-7 Web Development & Design material:
-   selectors, box model, decoration, typography, links,
-   responsive/adaptive design, media queries and breakpoints.
-*/
 
-/* =========================
-   BASIC / TAG SELECTORS
-   ========================= */
 
 * {
     box-sizing: border-box;
@@ -53,9 +46,7 @@ button {
     cursor: pointer;
 }
 
-/* =========================
-   CLASS SELECTORS / LAYOUT
-   ========================= */
+
 
 .container {
     width: 92%;
@@ -183,9 +174,6 @@ nav {
     border-radius: 5px;
 }
 
-/* =========================
-   HERO / BANNERS
-   ========================= */
 
 .hero {
     min-height: 560px;
@@ -281,9 +269,7 @@ nav {
     margin-bottom: 0;
 }
 
-/* =========================
-   GENERAL SECTIONS
-   ========================= */
+
 
 .section {
     padding: 65px 0;
@@ -321,9 +307,6 @@ nav {
     letter-spacing: 1px;
 }
 
-/* =========================
-   BOX MODEL / CARDS
-   ========================= */
 
 .features {
     padding: 45px 0;
@@ -398,9 +381,7 @@ nav {
     margin-bottom: 12px;
 }
 
-/* =========================
-   PRODUCT GRID
-   ========================= */
+
 
 .product-grid {
     display: grid;
@@ -473,9 +454,7 @@ nav {
     font-weight: 600;
 }
 
-/* =========================
-   CATALOGUE / SHOP
-   ========================= */
+
 
 .catalogue-search {
     max-width: 700px;
@@ -602,9 +581,7 @@ nav {
     display: block;
 }
 
-/* =========================
-   CONTACT / FORM
-   ========================= */
+
 
 .contact-grid {
     grid-template-columns: 0.9fr 1.1fr;
@@ -685,9 +662,7 @@ nav {
     overflow: hidden;
 }
 
-/* =========================
-   FAQ
-   ========================= */
+
 
 .faq-container {
     max-width: 850px;
@@ -727,9 +702,7 @@ nav {
     display: block;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+
 
 footer {
     background-color: #244d2c;
@@ -764,9 +737,7 @@ footer {
     font-size: 0.85rem;
 }
 
-/* =========================
-   COMPOUND / GROUPING SELECTORS
-   ========================= */
+
 
 /* Compound selector: targets links inside the navigation. */
 header .nav-links a {
@@ -782,10 +753,7 @@ header .nav-links a {
     font-weight: 700;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-   Mobile-first adjustment
-   ========================= */
+
 
 /* Breakpoint for medium screens */
 @media (max-width: 900px) {
