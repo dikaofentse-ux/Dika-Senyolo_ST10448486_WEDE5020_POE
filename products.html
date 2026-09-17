@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Green-Harvest | Product Catalogue</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div class="top-bar">
+
+    <div class="container top-content">
+
+        <span>
+            🌱 100% Fresh & Organic South African Produce
+        </span>
+
+        <span>
+            📞 012 345 6789
+        </span>
+
+    </div>
+
+</div>
+
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    🌱
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>
+                        Green-Harvest
+                    </h2>
+
+                    <span>
+                        ORGANIC FARM
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active-link" href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shop.html">
+                        Online Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="faq.html">
+                        FAQs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- PAGE BANNER -->
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>
+            Product Catalogue
+        </h1>
+
+        <p>
+            Browse our fresh organic produce.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="section products">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <h2>
+                Fresh Organic Products
+            </h2>
+
+            <p>
+                Search and browse vegetables, fruits, herbs
+                and free-range eggs.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="catalogue-search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔎 Search for spinach, apples, eggs...">
+
+        </div>
+
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="categories catalogue-categories">
+
+            <button
+                class="category-btn active"
+                data-category="all">
+
+                All
+
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="vegetables">
+
+                Vegetables
+
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="fruits">
+
+                Fruits
+
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="herbs">
+
+                Herbs
+
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="eggs">
+
+                Eggs
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="product-grid" id="productGrid">
+
+
+            <!-- SPINACH -->
+
+            <div class="product-card"
+                 data-category="vegetables"
+                 data-name="Organic Spinach">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Fresh
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=700&q=80"
+                        alt="Organic spinach">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Organic Spinach
+                    </h3>
+
+                    <p>
+                        Freshly harvested organic spinach.
+                    </p>
+
+                    <strong class="price">
+                        R25
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARROTS -->
+
+            <div class="product-card"
+                 data-category="vegetables"
+                 data-name="Organic Carrots">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Organic
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=700&q=80"
+                        alt="Organic carrots">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Organic Carrots
+                    </h3>
+
+                    <p>
+                        Crunchy and naturally sweet carrots.
+                    </p>
+
+                    <strong class="price">
+                        R30
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOMATOES -->
+
+            <div class="product-card"
+                 data-category="vegetables"
+                 data-name="Fresh Tomatoes">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Fresh
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh tomatoes">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Tomatoes
+                    </h3>
+
+                    <p>
+                        Juicy naturally grown tomatoes.
+                    </p>
+
+                    <strong class="price">
+                        R35
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPLES -->
+
+            <div class="product-card"
+                 data-category="fruits"
+                 data-name="Fresh Apples">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Fresh
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh apples">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Apples
+                    </h3>
+
+                    <p>
+                        Sweet and naturally grown apples.
+                    </p>
+
+                    <strong class="price">
+                        R45
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- STRAWBERRIES -->
+
+            <div class="product-card"
+                 data-category="fruits"
+                 data-name="Fresh Strawberries">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Popular
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=700&q=80"
+                        alt="Strawberries">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Strawberries
+                    </h3>
+
+                    <p>
+                        Fresh, juicy and naturally sweet.
+                    </p>
+
+                    <strong class="price">
+                        R50
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- BASIL -->
+
+            <div class="product-card"
+                 data-category="herbs"
+                 data-name="Fresh Basil">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Fresh
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1618375569909-3c8616cf7733?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh basil">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Basil
+                    </h3>
+
+                    <p>
+                        Aromatic organic basil.
+                    </p>
+
+                    <strong class="price">
+                        R20
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- MINT -->
+
+            <div class="product-card"
+                 data-category="herbs"
+                 data-name="Fresh Mint">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Organic
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1628556270448-4d4e4148e1a6?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh mint">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Mint
+                    </h3>
+
+                    <p>
+                        Refreshing organic mint leaves.
+                    </p>
+
+                    <strong class="price">
+                        R18
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- EGGS -->
+
+            <div class="product-card"
+                 data-category="eggs"
+                 data-name="Free Range Eggs">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Farm Fresh
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=700&q=80"
+                        alt="Free range eggs">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Free-Range Eggs
+                    </h3>
+
+                    <p>
+                        Farm fresh free-range eggs.
+                    </p>
+
+                    <strong class="price">
+                        R65
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div
+            id="noResults"
+            class="no-results">
+
+            No products found.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+
+                <h3>
+                    🌱 Green-Harvest
+                </h3>
+
+                <p>
+                    Fresh organic food from our farm to your table.
+                </p>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">Online Shop</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Information
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="faq.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <ul>
+
+                    <li>📞 012 345 6789</li>
+                    <li>📱 072 123 4567</li>
+                    <li>✉️ info@greenharvest.co.za</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © <span id="year"></span>
+        Green-Harvest Organic Farm.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

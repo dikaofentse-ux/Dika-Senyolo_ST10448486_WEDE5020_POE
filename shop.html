@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Green-Harvest | Online Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div class="top-bar">
+
+    <div class="container top-content">
+
+        <span>
+            🌱 Fresh Organic Produce
+        </span>
+
+        <span>
+            📞 012 345 6789
+        </span>
+
+    </div>
+
+</div>
+
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    🌱
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>
+                        Green-Harvest
+                    </h2>
+
+                    <span>
+                        ORGANIC FARM
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active-link" href="shop.html">
+                        Online Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="faq.html">
+                        FAQs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>
+            Online Shop
+        </h1>
+
+        <p>
+            Order fresh organic products from Green-Harvest.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section products">
+
+    <div class="container">
+
+
+        <div class="shop-header">
+
+            <div>
+
+                <h2>
+                    Shop Fresh Produce
+                </h2>
+
+                <p>
+                    Add products to your cart and place your order.
+                </p>
+
+            </div>
+
+
+            <button
+                class="btn"
+                id="openCart">
+
+                🛒 Cart
+                <span id="cartCount">0</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="catalogue-search">
+
+            <input
+                type="text"
+                id="shopSearch"
+                placeholder="🔎 Search products...">
+
+        </div>
+
+
+        <div
+            class="product-grid"
+            id="shopProductGrid">
+
+
+            <!-- SPINACH -->
+
+            <div class="product-card"
+                 data-name="Organic Spinach">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=700&q=80"
+                        alt="Spinach">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Organic Spinach
+                    </h3>
+
+                    <p>
+                        Freshly harvested spinach.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R25
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Organic Spinach"
+                            data-price="25">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARROTS -->
+
+            <div class="product-card"
+                 data-name="Organic Carrots">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=700&q=80"
+                        alt="Carrots">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Organic Carrots
+                    </h3>
+
+                    <p>
+                        Naturally sweet carrots.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R30
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Organic Carrots"
+                            data-price="30">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPLES -->
+
+            <div class="product-card"
+                 data-name="Fresh Apples">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=700&q=80"
+                        alt="Apples">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Apples
+                    </h3>
+
+                    <p>
+                        Sweet naturally grown apples.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R45
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Fresh Apples"
+                            data-price="45">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STRAWBERRIES -->
+
+            <div class="product-card"
+                 data-name="Fresh Strawberries">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=700&q=80"
+                        alt="Strawberries">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Strawberries
+                    </h3>
+
+                    <p>
+                        Fresh and naturally sweet.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R50
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Strawberries"
+                            data-price="50">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BASIL -->
+
+            <div class="product-card"
+                 data-name="Fresh Basil">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1618375569909-3c8616cf7733?auto=format&fit=crop&w=700&q=80"
+                        alt="Basil">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Basil
+                    </h3>
+
+                    <p>
+                        Aromatic organic basil.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R20
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Fresh Basil"
+                            data-price="20">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MINT -->
+
+            <div class="product-card"
+                 data-name="Fresh Mint">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1628556270448-4d4e4148e1a6?auto=format&fit=crop&w=700&q=80"
+                        alt="Mint">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Mint
+                    </h3>
+
+                    <p>
+                        Refreshing organic mint.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R18
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Fresh Mint"
+                            data-price="18">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EGGS -->
+
+            <div class="product-card"
+                 data-name="Free Range Eggs">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=700&q=80"
+                        alt="Eggs">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Free-Range Eggs
+                    </h3>
+
+                    <p>
+                        Farm fresh free-range eggs.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R65
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Free-Range Eggs"
+                            data-price="65">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOMATOES -->
+
+            <div class="product-card"
+                 data-name="Fresh Tomatoes">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=700&q=80"
+                        alt="Tomatoes">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Fresh Tomatoes
+                    </h3>
+
+                    <p>
+                        Juicy farm fresh tomatoes.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong class="price">
+                            R35
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Fresh Tomatoes"
+                            data-price="35">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CART MODAL -->
+
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-box">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart 🛒
+            </h2>
+
+            <button
+                class="close-cart"
+                id="closeCart">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div id="cartItems">
+
+            <div class="empty-cart">
+                Your cart is empty.
+            </div>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total:
+            </span>
+
+            <span id="cartTotal">
+                R0
+            </span>
+
+        </div>
+
+
+        <button
+            class="btn"
+            id="orderBtn"
+            style="width:100%;">
+
+            Order Through WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+    Product added to cart!
+</div>
+
+
+<footer>
+
+    <div class="copyright">
+
+        © <span id="year"></span>
+        Green-Harvest Organic Farm.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
