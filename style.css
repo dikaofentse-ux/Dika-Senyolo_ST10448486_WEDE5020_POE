@@ -1,5 +1,12 @@
 /* Green-Harvest Organic Farm
+   CSS based on the Week 5-7 Web Development & Design material:
+   selectors, box model, decoration, typography, links,
+   responsive/adaptive design, media queries and breakpoints.
+*/
 
+/* =========================
+   BASIC / TAG SELECTORS
+   ========================= */
 
 * {
     box-sizing: border-box;
@@ -46,7 +53,9 @@ button {
     cursor: pointer;
 }
 
-
+/* =========================
+   CLASS SELECTORS / LAYOUT
+   ========================= */
 
 .container {
     width: 92%;
@@ -174,6 +183,9 @@ nav {
     border-radius: 5px;
 }
 
+/* =========================
+   HERO / BANNERS
+   ========================= */
 
 .hero {
     min-height: 560px;
@@ -269,7 +281,9 @@ nav {
     margin-bottom: 0;
 }
 
-
+/* =========================
+   GENERAL SECTIONS
+   ========================= */
 
 .section {
     padding: 65px 0;
@@ -307,6 +321,9 @@ nav {
     letter-spacing: 1px;
 }
 
+/* =========================
+   BOX MODEL / CARDS
+   ========================= */
 
 .features {
     padding: 45px 0;
@@ -381,7 +398,9 @@ nav {
     margin-bottom: 12px;
 }
 
-
+/* =========================
+   PRODUCT GRID
+   ========================= */
 
 .product-grid {
     display: grid;
@@ -454,7 +473,9 @@ nav {
     font-weight: 600;
 }
 
-
+/* =========================
+   CATALOGUE / SHOP
+   ========================= */
 
 .catalogue-search {
     max-width: 700px;
@@ -581,7 +602,9 @@ nav {
     display: block;
 }
 
-
+/* =========================
+   CONTACT / FORM
+   ========================= */
 
 .contact-grid {
     grid-template-columns: 0.9fr 1.1fr;
@@ -662,7 +685,9 @@ nav {
     overflow: hidden;
 }
 
-
+/* =========================
+   FAQ
+   ========================= */
 
 .faq-container {
     max-width: 850px;
@@ -702,7 +727,9 @@ nav {
     display: block;
 }
 
-
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     background-color: #244d2c;
@@ -737,7 +764,9 @@ footer {
     font-size: 0.85rem;
 }
 
-
+/* =========================
+   COMPOUND / GROUPING SELECTORS
+   ========================= */
 
 /* Compound selector: targets links inside the navigation. */
 header .nav-links a {
@@ -753,7 +782,10 @@ header .nav-links a {
     font-weight: 700;
 }
 
-
+/* =========================
+   RESPONSIVE DESIGN
+   Mobile-first adjustment
+   ========================= */
 
 /* Breakpoint for medium screens */
 @media (max-width: 900px) {
@@ -903,4 +935,41 @@ header .nav-links a {
     .product-info {
         padding: 20px;
     }
+}
+
+
+/* Part 3: accessibility, interactive feedback and responsive form improvements */
+[hidden] { display: none !important; }
+.menu-btn { cursor: pointer; }
+.nav-links.show { display: flex; }
+.faq-question { cursor: pointer; }
+.faq-question:focus-visible, .menu-btn:focus-visible, .category-btn:focus-visible,
+.btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #d5a83a;
+  outline-offset: 3px;
+}
+.form-status { margin: 12px 0; font-weight: 600; }
+.form-status.error { color: #a32121; }
+.form-status.success { color: #245b35; }
+.small-note { font-size: .9rem; margin-top: 1rem; line-height: 1.6; }
+.product-card[hidden] { display: none !important; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 9999; display: none; align-items: center;
+  justify-content: center; flex-direction: column; gap: 12px; padding: 24px;
+  background: rgba(0,0,0,.88);
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: min(92vw, 1000px); max-height: 78vh; width: auto; height: auto; object-fit: contain; border-radius: 8px; }
+.lightbox-caption { color: #fff; text-align: center; margin: 0; }
+.lightbox-close { position: absolute; top: 14px; right: 22px; border: 0; border-radius: 50%; width: 44px; height: 44px; font-size: 2rem; cursor: pointer; color: #fff; background: #245b35; }
+body.lightbox-open { overflow: hidden; }
+input, select, textarea { max-width: 100%; }
+img { max-width: 100%; height: auto; }
+@media (max-width: 768px) {
+  .nav-links.show { display: flex; flex-direction: column; width: 100%; gap: 10px; }
+  .nav-links.show li { width: 100%; }
+  .nav-links.show a { display: block; padding: 10px 8px; }
+  .top-content { flex-wrap: wrap; gap: 5px 12px; }
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .lightbox { padding: 12px; }
 }

@@ -8,7 +8,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Green-Harvest | Contact Us</title>
+    <title>Contact Green-Harvest Organic Farm | Gauteng</title>
+    <meta name="description" content="Contact Green-Harvest Organic Farm about products, deliveries, business orders or general messages.">
+    <meta name="theme-color" content="#245b35">
 
     <link rel="stylesheet" href="style.css">
 
@@ -92,7 +94,8 @@
                     <a href="faq.html">FAQs</a>
                 </li>
 
-                <li>
+                <li><a href="enquiry.html">Enquiries</a></li>
+                    <li>
                     <a class="active-link"
                        href="contact.html">
                         Contact
@@ -210,18 +213,21 @@
                 </h2>
 
 
-                <form id="contactForm">
+                <form id="contactForm" action="mailto:info@greenharvest.co.za" method="post" enctype="text/plain">
 
 
                     <div class="form-group">
 
-                        <label>
+                        <label for="name">
                             Full Name
                         </label>
 
                         <input
                             type="text"
                             id="name"
+                            name="Full name"
+                            minlength="3" maxlength="80"
+                            autocomplete="name"
                             placeholder="Your full name"
                             required>
 
@@ -230,13 +236,15 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label for="email">
                             Email Address
                         </label>
 
                         <input
                             type="email"
                             id="email"
+                            name="Email"
+                            autocomplete="email"
                             placeholder="Your email"
                             required>
 
@@ -245,13 +253,16 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label for="phone">
                             Phone Number
                         </label>
 
                         <input
                             type="tel"
                             id="phone"
+                            name="Phone"
+                            pattern="[0-9+() -]{7,20}"
+                            autocomplete="tel"
                             placeholder="Your phone number">
 
                     </div>
@@ -259,25 +270,25 @@
 
                     <div class="form-group">
 
-                        <label>
-                            Subject
+                        <label for="reason">
+                            Type of Message
                         </label>
 
-                        <select id="reason">
+                        <select id="reason" name="Message type" required>
 
-                            <option>
+                            <option value="General Enquiry">
                                 General Enquiry
                             </option>
 
-                            <option>
+                            <option value="Product Order">
                                 Product Order
                             </option>
 
-                            <option>
+                            <option value="Delivery Enquiry">
                                 Delivery Enquiry
                             </option>
 
-                            <option>
+                            <option value="Business Order">
                                 Business Order
                             </option>
 
@@ -288,17 +299,21 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label for="message">
                             Message
                         </label>
 
                         <textarea
                             id="message"
+                            name="Message"
+                            minlength="10" maxlength="1000"
                             placeholder="Write your message..."
                             required></textarea>
 
                     </div>
 
+
+                    <p id="contactStatus" class="form-status" role="status" aria-live="polite"></p>
 
                     <button
                         type="submit"
