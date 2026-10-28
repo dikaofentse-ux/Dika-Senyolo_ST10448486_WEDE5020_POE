@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-
-# Replace with the actual published sitemap URL after deployment.
-Sitemap: https//dikaofentse-ux.github.io/sitemap.xml
+Sitemap: https//dikaofentse-ux.github.io/Dika-Senyolo_ST10448486_WEDE5020_POE/sitemap.xml
