@@ -1,7 +1,9 @@
 # Green-Harvest Organic Farm – WEDE5020 POE
 
 **Student Name:** Dika Senyolo
+
 **Student Number** ST10448486
+
 **Module:** WEDE5020 Web Development (Introduction)
 
 # 1. Project Overview
