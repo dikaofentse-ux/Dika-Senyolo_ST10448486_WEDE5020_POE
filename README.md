@@ -2,7 +2,7 @@
 
 **Student Name:** Dika Senyolo
 
-**Student Number** ST10448486
+**Student Number:** ST10448486
 
 **Module:** WEDE5020 Web Development (Introduction)
 
