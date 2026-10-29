@@ -55,8 +55,11 @@ In addition to these pages, there is "style.css" for style, JavaScript for inter
 # 7. References
 
 -GitHub Docs. n.d. About GitHub Pages. Retrieved from: <https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages> (Accessed 14 September 2026)
+
 -Google Search Central. n.d. Build and submit a sitemap. Retrieved from: <https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap> Accessed 29 October 2026)
+
 -MDN Web Docs. n.d. Client-side form validation. Retrieved from: <https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation> (Accessed 14 September 2026)
+
 -W3Schools. n.d. HTML and CSS tutorials. Retrieved from: <https://www.w3schools.com/> (Accessed 14 September 2026)
 
 # 8. Declaration
